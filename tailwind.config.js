@@ -6,6 +6,7 @@ export default {
         bgblue: "#E6F0FA", // light blue
         headerblue: "#CCDDED",
         buttonblue: "#bbcee1",
+        hoverbuttonblue: "#a8c0d8",
         gold: "#D9720C",
         navy: "#00162B",
       },

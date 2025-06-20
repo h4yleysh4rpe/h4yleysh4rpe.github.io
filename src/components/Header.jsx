@@ -5,13 +5,13 @@ export default function Header() {
         Hayley Sharpe
       </h1>
       <div className="flex text-xl flex-row items-center gap-8">
-        <div className="bg-buttonblue shadow-lg shadow-(color:navy) rounded-lg px-5 py-4">
+        <div className="bg-buttonblue shadow-lg shadow-(color:navy) transition-all duration-300 hover:shadow-xl hover:scale-105 hover:bg-hoverbuttonblue rounded-lg px-5 py-4">
           Hello1
         </div>
-        <div className="bg-buttonblue shadow-lg shadow-(color:navy) rounded-lg px-5 py-4">
+        <div className="bg-buttonblue shadow-lg shadow-(color:navy) transition-all duration-300 hover:shadow-xl hover:scale-105 hover:bg-hoverbuttonblue rounded-lg px-5 py-4">
           Hell2eiqwrf
         </div>
-        <div className="bg-buttonblue shadow-lg shadow-(color:navy) rounded-lg px-5 py-4">
+        <div className="bg-buttonblue shadow-lg shadow-(color:navy) transition-all duration-300 hover:shadow-xl hover:scale-105 hover:bg-hoverbuttonblue rounded-lg px-5 py-4">
           NFkjsef
         </div>
       </div>
