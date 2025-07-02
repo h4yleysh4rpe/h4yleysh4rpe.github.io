@@ -20,9 +20,6 @@ export default function Header() {
         >
           Portfolio
         </div>
-        <div className="bg-buttonblue shadow-lg shadow-(color:navy) transition-all duration-300 hover:shadow-xl hover:scale-105 hover:bg-hoverbuttonblue rounded-lg px-5 py-4">
-          NFkjsef
-        </div>
       </div>
     </header>
   );
