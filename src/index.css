@@ -18,6 +18,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  background-color: #e6f0fa;
+  margin: 0;
+}
+
 html,
 body,
 #root {
