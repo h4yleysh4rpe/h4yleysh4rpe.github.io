@@ -4,7 +4,10 @@ export default function Header() {
   const navigate = useNavigate();
   return (
     <header className="bg-headerblue font-roboto px-8 text-navy h-28 flex flex-row items-center justify-between p-4 shadow-md rounded-xl">
-      <h1 className="text-3xl text-shadow-bottom-navy font-judson">
+      <h1
+        onClick={() => navigate("/")}
+        className="text-3xl text-shadow-bottom-navy font-judson"
+      >
         Hayley Sharpe
       </h1>
       <div className="flex text-xl flex-row items-center gap-8">
