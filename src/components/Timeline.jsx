@@ -28,10 +28,12 @@ export default function Timeline() {
     <div>
       <div className="flex flex-row w-full pb-10 pt-10">
         <div className="w-1/4"></div>
-        <div>
+        <div className="flex flex-col items-center -mr-2">
+          <div className="bg-navy rounded-full text-center w-5 h-5"></div>
           <div className="h-full border-l-4 border-l-navy"></div>
+          <div className="bg-navy rounded-full text-center w-5 h-5"></div>
         </div>
-        <div className="mt-10 mb-10 flex flex-col justify-evenly gap-16">
+        <div className="mt-20 mb-20 flex flex-col justify-evenly gap-16">
           {timelineData.map((item, index) => (
             <div key={index} className="flex flex-row items-center">
               <div
