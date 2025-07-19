@@ -3,19 +3,22 @@ import React, { useState } from "react";
 export default function Timeline() {
   const timelineData = [
     {
-      date: "2024",
-      title: "Started Internship",
-      description: "Worked on frontend with React and Tailwind.",
+      date: "2024-2025",
+      title: "Software Development Intern",
+      company: "Serato",
+      description: "php",
     },
     {
       date: "2024",
-      title: "Launched Project",
-      description: "Deployed a full-stack app using Vercel.",
+      title: "got money",
+      company: "Serato",
+      description: "did something else",
     },
     {
       date: "2024",
-      title: "Graduated",
-      description: "Completed BSc in Computer Science.",
+      title: "slayed",
+      company: "Serato",
+      description: "dunno",
     },
   ];
 
@@ -36,18 +39,30 @@ export default function Timeline() {
                   hoveredIndex === index ? "scale-125" : ""
                 }`}
               ></div>
-              <div className="border-t-4 w-24 border-t-navy"></div>
+              <div className="-mt-6 -ml-1 flex flex-col items-end">
+                <div
+                  className={`text-navy w-fit mr-4 ml-0 transition-all duration-500 ${
+                    hoveredIndex === index ? "mr-7 scale-110" : ""
+                  }`}
+                >
+                  {item.date}
+                </div>
+                <div className="border-t-4 w-32 border-t-navy"></div>
+              </div>
               <div
                 className="bg-headerblue hover:bg-buttonblue w-96 h-40 group rounded-lg p-8 hover:w-[800px] hover:h-52 hover:scale-105 transition-all duration-500 text-white"
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
               >
                 <h3 className="text-xl font-semibold">{item.title}</h3>
+                <h3 className="text-l font-semibold">{item.company}</h3>
                 <p
                   className={`mt-2 transition-opacity duration-500 ${
                     hoveredIndex === index ? "opacity-100" : "opacity-0"
                   }`}
-                ></p>
+                >
+                  {item.description}
+                </p>
               </div>
             </div>
           ))}
