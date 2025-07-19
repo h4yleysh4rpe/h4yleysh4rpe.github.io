@@ -10,7 +10,7 @@ import ExperiencePage from "./pages/ExperiencePage.js";
 function App() {
   return (
     <Router>
-      <div className="bg-bgblue text-gold p-6 text-3xl">
+      <div className="bg-bgblue text-gold p-6 -z-2 text-3xl">
         <Header />
       </div>
       <Routes>
