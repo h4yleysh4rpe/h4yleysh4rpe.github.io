@@ -30,7 +30,6 @@ export default function Timeline() {
 
   return (
     <div>
-      <div className="text-2xl text-navy ml-10">Timeline</div>
       <div className="flex flex-row w-full pb-10 pt-10">
         <div className="w-1/4"></div>
         <div className="flex flex-col items-center -mr-2">
