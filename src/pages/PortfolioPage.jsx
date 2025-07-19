@@ -1,3 +1,4 @@
+import Projects from "../components/Projects";
 import Timeline from "../components/Timeline";
 
 export default function PortfolioPage() {
@@ -13,6 +14,7 @@ export default function PortfolioPage() {
       </div>
       <div className="flex flex-col">
         <div className="text-navy">Projects</div>
+        <Projects />
       </div>
     </div>
   );
