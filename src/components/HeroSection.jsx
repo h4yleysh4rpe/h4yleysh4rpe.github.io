@@ -9,7 +9,7 @@ export default function HeroSection() {
         Hi, I'm <i>Hayley</i>
       </h1>
       <div className="w-1/2">
-        <p className="text-navy text-center mt-6 text-lg">
+        <p className="text-navy text-center mt-6 text-lg font-inter">
           I'm a passionate 3rd year Computer Science and Mathematics student at
           the University of Auckland. I'm interested in web and software
           development, machine learning, and human-computer interaction. I'm

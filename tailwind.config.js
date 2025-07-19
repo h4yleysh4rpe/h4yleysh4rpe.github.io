@@ -12,8 +12,9 @@ export default {
         navy: "#00162B",
       },
       fontFamily: {
-        judson: ['"Judson"', "serif"],
-        Roboto: ['"Roboto"'],
+        judson: ["Judson", "serif"],
+        roboto: ["Roboto"],
+        inter: ["Inter", "sans-serif"],
       },
       keyframes: {
         "fade-in": {
@@ -29,7 +30,7 @@ export default {
         },
       },
       animation: {
-        "fade-in": "fade-in ease-out 1.5s forwards",
+        "fade-in": "fade-in ease-out 1.2s forwards",
       },
     },
   },

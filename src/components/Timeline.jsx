@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function Timeline() {
   const timelineData = [
@@ -27,6 +27,12 @@ export default function Timeline() {
   ];
 
   const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [showTimeline, setShowTimeline] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setShowTimeline(true), 50);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <div>
@@ -37,9 +43,17 @@ export default function Timeline() {
           <div className="h-full border-l-4 border-l-navy"></div>
           <div className="bg-navy rounded-full text-center w-5 h-5"></div>
         </div>
-        <div className="mt-20 mb-20 flex flex-col justify-evenly gap-16">
+        <div className="mt-10 mb-20 flex flex-col justify-evenly gap-16">
           {timelineData.map((item, index) => (
-            <div key={index} className="flex flex-row items-center">
+            <div
+              key={index}
+              style={{ transitionDelay: `${index * 150}ms` }}
+              className={`flex flex-row items-center transition-all duration-700 ease-out ${
+                showTimeline
+                  ? "opacity-100 translate-y-10"
+                  : "opacity-0 translate-y-0"
+              } delay-${index * 150}`}
+            >
               <div
                 className={`w-5 h-5 -ml-3 rounded-full bg-navy transition-all duration-300 ${
                   hoveredIndex === index ? "scale-125 bg-gold" : ""
