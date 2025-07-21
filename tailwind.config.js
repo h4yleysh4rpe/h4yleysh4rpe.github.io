@@ -8,11 +8,29 @@ export default {
         buttonblue: "#bbcee1",
         hoverbuttonblue: "#a8c0d8",
         gold: "#D9720C",
+        fadedgold: "#d6ad85",
         navy: "#00162B",
       },
       fontFamily: {
-        judson: ['"Judson"', "serif"],
-        Roboto: ['"Roboto"'],
+        judson: ["Judson", "serif"],
+        roboto: ["Roboto"],
+        inter: ["Inter", "sans-serif"],
+      },
+      keyframes: {
+        "fade-in": {
+          "0%": {
+            opacity: 0,
+            transform: "translateY(1rem)",
+            visibility: "hidden",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translateY(0)",
+          },
+        },
+      },
+      animation: {
+        "fade-in": "fade-in ease-out 1.2s forwards",
       },
     },
   },
