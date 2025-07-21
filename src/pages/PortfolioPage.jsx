@@ -16,7 +16,7 @@ export default function PortfolioPage() {
         </div>
       </div>
       <div className="flex flex-col">
-        <div className="mb-8"></div>
+        <div className="mb-6"></div>
         <Projects />
       </div>
     </div>
