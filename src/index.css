@@ -20,6 +20,7 @@
 body {
   background-color: #e6f0fa;
   margin: 0;
+  cursor: none;
 }
 
 html,
