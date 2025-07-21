@@ -30,12 +30,12 @@ export default function MouseBlob() {
 
   return (
     <div
-      className="fixed pointer-events-none z-50 w-36 h-36 bg-gradient-to-tr from-headerblue to-bgblue rounded-full opacity-70 transition-all duration-100 blur-lg ease-out"
+      className="fixed pointer-events-none z-50 w-5 h-5 bg-navy shadow-lg rounded-full opacity-70 transition-all duration-100 ease-out"
       style={{
         transform: `
-          translate(${position.x - 72}px, ${position.y - 72}px)
+          translate(${position.x - 32}px, ${position.y - 32}px)
           rotate(${angle}deg)
-          scale(${scale}, ${2 - scale})
+          scale(${2.5 - scale}, ${2.5 - scale})
         `,
       }}
     />

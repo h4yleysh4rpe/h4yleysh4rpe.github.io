@@ -19,16 +19,16 @@ export default function HeroSection() {
       </div>
       <div className="flex flex-row gap-4 mt-6">
         <a href="https://github.com/h4yleysh4rpe" target="_blank">
-          <FaGithub className="size-12 text-fadedgold transition-all duration-300 hover:scale-105 hover:text-gold" />
+          <FaGithub className="size-12 cursor-none text-fadedgold transition-all duration-300 hover:scale-105 hover:text-gold" />
         </a>
         <a href="mailto:sharpeh42@gmail.com">
-          <IoMail className="size-12 text-fadedgold transition-all duration-300 hover:scale-105 hover:text-gold" />
+          <IoMail className="size-12 cursor-none text-fadedgold transition-all duration-300 hover:scale-105 hover:text-gold" />
         </a>
         <a
           href="https://www.linkedin.com/in/hayley-sharpe-729b69294/"
           target="_blank"
         >
-          <FaLinkedin className="size-12 text-fadedgold transition-all duration-300 hover:scale-105 hover:text-gold" />
+          <FaLinkedin className="size-12 cursor-none text-fadedgold transition-all duration-300 hover:scale-105 hover:text-gold" />
         </a>
       </div>
     </div>
