@@ -10,6 +10,7 @@ export default {
         gold: "#D9720C",
         fadedgold: "#d6ad85",
         navy: "#00162B",
+        lightnavy: "#00305e",
       },
       fontFamily: {
         judson: ["Judson", "serif"],
