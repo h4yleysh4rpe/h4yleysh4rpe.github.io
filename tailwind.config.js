@@ -29,9 +29,31 @@ export default {
             transform: "translateY(0)",
           },
         },
+        "about-pop-up": {
+          "0%": {
+            opacity: 0,
+            visibility: "hidden",
+          },
+          "100%": {
+            opacity: 1,
+          },
+        },
+        "reveal-corner": {
+          "0%": {
+            opacity: 0,
+            visibility: "hidden",
+            clipPath: "polygon(100% 0%, 100% 0%, 100% 0%, 100% 0%)",
+          },
+          "100%": {
+            clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+            opacity: 1,
+          },
+        },
       },
       animation: {
         "fade-in": "fade-in ease-out 1.2s forwards",
+        "about-pop-up-img": "about-pop-up ease-in-out 0.5s forwards",
+        "about-pop-up-arrow": "reveal-corner ease-in-out 0.7s forwards",
       },
     },
   },

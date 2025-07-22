@@ -28,7 +28,9 @@ export default function Projects() {
     <div>
       <div className="flex flex-col items-center font-inter">
         <div className="flex flex-col bg-headerblue w-[97%] pt-6 pb-8 rounded-xl gap-4">
-          <div className="text-navy ml-10 mb-3 mt-3 text-3xl">Projects</div>
+          <div className="text-navy ml-10 mb-3 mt-3 text-4xl font-judson">
+            Projects
+          </div>
           {projectData.map((project, index) => (
             <div className="bg-buttonblue shadow-lg shadow-(color:navy) mx-10 rounded-lg px-8 py-6">
               <div className="text-navy text-3xl mb-3">{project.title}</div>

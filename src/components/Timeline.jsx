@@ -93,7 +93,7 @@ export default function Timeline() {
                   {item.skills.map((skill, skillIndex) => (
                     <span
                       key={skillIndex}
-                      className={`bg-navy text-bgblue transition-opacity duration-300 text-sm px-3 py-1 rounded-full ${
+                      className={`bg-lightnavy text-bgblue transition-opacity duration-300 text-sm px-3 py-1 rounded-full ${
                         hoveredIndex === index
                           ? "opacity-100 delay-200"
                           : "opacity-0 transition-none"
