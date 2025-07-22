@@ -9,7 +9,7 @@ export default function Header() {
         onClick={() => navigate("/")}
       >
         <img
-          src="public\logo.png"
+          src="/website_logo.png"
           width={100}
           className="group-hover:scale-110 transition-all duration-300"
         ></img>
