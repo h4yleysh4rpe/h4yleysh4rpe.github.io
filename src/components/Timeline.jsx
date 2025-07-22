@@ -36,7 +36,7 @@ export default function Timeline() {
 
   return (
     <div>
-      <div className="flex flex-row w-full pb-10 pt-10">
+      <div className="flex flex-row w-full pb-10 pt-10 font-inter">
         <div className="w-1/4"></div>
         <div className="flex flex-col items-center -mr-2">
           <div className="bg-navy rounded-full text-center w-5 h-5"></div>
@@ -56,7 +56,7 @@ export default function Timeline() {
             >
               <div
                 className={`w-5 h-5 -ml-3 rounded-full bg-navy transition-all duration-300 ${
-                  hoveredIndex === index ? "scale-125 bg-gold" : ""
+                  hoveredIndex === index ? "scale-125 bg-fadedgold" : ""
                 }`}
               ></div>
               <div className="-mt-6 -ml-1 flex flex-col items-end">
@@ -77,7 +77,7 @@ export default function Timeline() {
                 <h3 className="text-xl font-semibold text-navy">
                   {item.title}
                 </h3>
-                <h3 className="text-l font-semibold text-gold">
+                <h3 className="text-l font-semibold mt-1 text-gold">
                   {item.company}
                 </h3>
                 <p
@@ -93,7 +93,7 @@ export default function Timeline() {
                   {item.skills.map((skill, skillIndex) => (
                     <span
                       key={skillIndex}
-                      className={`bg-navy text-white transition-opacity duration-300 text-sm px-3 py-1 rounded-full ${
+                      className={`bg-navy text-bgblue transition-opacity duration-300 text-sm px-3 py-1 rounded-full ${
                         hoveredIndex === index
                           ? "opacity-100 delay-200"
                           : "opacity-0 transition-none"
